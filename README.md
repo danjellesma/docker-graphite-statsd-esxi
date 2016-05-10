@@ -20,7 +20,7 @@ This image will have you running & collecting stats in just a few minutes.
 ## Quick Start
 
 ```sh
-docker run -d --name graphite --restart=always hopsoft/graphite-statsd
+docker run -d --name graphite --restart=always danjellz/graphite-statsd-esxi
 ```
 
 This starts a Docker container named: **graphite**
@@ -57,7 +57,7 @@ docker run -d\
  -p 2023-2024:2023-2024\
  -p 8125:8125/udp\
  -p 8126:8126\
- hopsoft/graphite-statsd
+ danjellz/graphite-statsd-esxi
 ```
 
 ### Mounted Volumes
@@ -162,7 +162,7 @@ docker run -d\
  -v /path/to/graphite/configs:/opt/graphite/conf\
  -v /path/to/graphite/data:/opt/graphite/storage\
  -v /path/to/statsd:/opt/statsd\
- hopsoft/graphite-statsd
+ danjellz/graphite-statsd-esxi
 ```
 
 **Note**: The container will initialize properly if you mount empty volumes at
@@ -180,4 +180,4 @@ docker run -d\
 Build the image yourself.
 
 1. `git clone https://github.com/hopsoft/docker-graphite-statsd.git`
-1. `docker build -t hopsoft/graphite-statsd .`
+1. `docker build -t danjellz/graphite-statsd-esxi .`
