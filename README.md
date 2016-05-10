@@ -179,5 +179,5 @@ docker run -d\
 
 Build the image yourself.
 
-1. `git clone https://github.com/hopsoft/docker-graphite-statsd.git`
+1. `git clone https://github.com/danjellesma/docker-graphite-statsd-esxi.git`
 1. `docker build -t danjellz/graphite-statsd-esxi .`
